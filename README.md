@@ -20,7 +20,7 @@ from public sources and serves them via an interactive Streamlit dashboard.
 
 ```bash
 # 1. Clone + setup
-git clone <your-repo-url>
+git clone https://github.com/rudraparmar2011/Expo-Scraper.git
 cd expo-scraper
 python -m venv venv
 
