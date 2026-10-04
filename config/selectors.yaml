@@ -1,0 +1,50 @@
+exhibition_globe:
+  status: "active"
+  base_url: "https://exhibitionglobe.com"
+
+  # -----------------------------------------------------------------
+  # Search-based scraping
+  # -----------------------------------------------------------------
+  search_url_template: "https://exhibitionglobe.com/?s={query}"
+  search_queries:
+    - "ahmedabad"
+    - "vadodara"
+    - "ahmedabad expo"
+    - "vadodara expo"
+    - "ahmedabad exhibition"
+    - "vadodara exhibition"
+    - "gujarat expo"
+  max_search_pages: 3
+
+  # -----------------------------------------------------------------
+  # Card selectors — from WordPress "elementor-post" loop
+  # -----------------------------------------------------------------
+  event_card: "article.elementor-post"
+
+  card_fields:
+    name:  ".elementor-post__title a"
+    link:  ".elementor-post__title a::attr(href)"
+    image: ".elementor-post__thumbnail__link img::attr(src)"
+
+  # -----------------------------------------------------------------
+  # Detail page selectors
+  # -----------------------------------------------------------------
+  detail_fields:
+    title:        "h1"
+    body_content: ".elementor-widget-theme-post-content"
+    body_fallback:
+      - ".entry-content"
+      - "article"
+      - "main"
+
+  # -----------------------------------------------------------------
+  # Safety — skip these URLs
+  # -----------------------------------------------------------------
+  forbidden_patterns:
+    - "/wp-admin/"
+    - "/wp-json/"
+    - "/tag/"
+    - "/author/"
+    - "/category/"
+    - "?replytocom="
+    - "?share="

@@ -1,0 +1,44 @@
+/* Expo Dashboard — decoration only (colors handled by config.toml) */
+
+/* Metric cards */
+[data-testid="stMetric"] {
+    background: #ffffff;
+    border: 1px solid #e6dfd6;
+    border-radius: 14px;
+    padding: 1rem 1.2rem;
+    box-shadow: 0 2px 12px rgba(31, 27, 22, 0.06);
+}
+
+/* Dataframe */
+[data-testid="stDataFrame"] {
+    border: 1px solid #e6dfd6;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(31, 27, 22, 0.06);
+}
+
+/* Plotly chart wrapper */
+[data-testid="stPlotlyChart"] {
+    border: 1px solid #e6dfd6;
+    border-radius: 14px;
+    padding: 0.5rem;
+    background: #ffffff;
+    box-shadow: 0 2px 12px rgba(31, 27, 22, 0.06);
+}
+
+/* Expanders */
+[data-testid="stExpander"] {
+    border: 1px solid #e6dfd6;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(31, 27, 22, 0.06);
+}
+
+/* Images */
+[data-testid="stImage"] img {
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(31, 27, 22, 0.06);
+}
+
+/* Hide Streamlit chrome */
+footer { visibility: hidden; }
+[data-testid="stToolbar"] { visibility: hidden; }

@@ -1,0 +1,16 @@
+[theme]
+# ---- Base palette ----
+base = "light"                          # "light" or "dark"
+primaryColor = "#c45c3e"                # terracotta — accents, buttons, links
+backgroundColor = "#fbf7f2"             # warm cream — main background
+secondaryBackgroundColor = "#f4ece1"    # slightly darker cream — sidebar, cards
+textColor = "#1f1b16"                   # warm near-black — all body text
+
+# ---- Typography ----
+font = "sans serif"
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false
