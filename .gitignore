@@ -6,7 +6,7 @@ venv/
 .env
 
 # Generated data and logs
-data/
+# data/
 logs/
 
 # Python bytecode and caches
